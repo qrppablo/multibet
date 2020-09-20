@@ -2,9 +2,9 @@
 
 Apuesta y retirate antes de que explote el multiplicador!
 
-Apuesta máxima: $1000
-Multiplicador máximo: 10x
-Duración máxima de la partida: 30s
+Apuesta máxima: $1000  
+Multiplicador máximo: 10x  
+Duración máxima de la partida: 30s  
 
 Utiliza tu cuenta de Google para mantener tu balance en localStorage.
 
