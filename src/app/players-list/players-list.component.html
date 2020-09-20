@@ -1,0 +1,11 @@
+<h3 class="ui left floated header jugadores"><i class="users icon"></i>Jugadores</h3>
+<div class="ui clearing divider jugadores"></div>
+    <div *ngFor="let user of users; index as i">
+    <app-fake-user 
+        [name]="users[i].name" 
+        [multi]="store.multi" 
+        [finishedRound]="store.finishedRound"
+        [newRound]="store.newRound"
+    >
+    </app-fake-user>
+</div>

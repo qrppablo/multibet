@@ -1,0 +1,16 @@
+
+<div class="fake-player-data">
+    <p>
+        <i class="icon user"></i>
+        <span class="fake-player-name">{{ fakePlayer.name }}</span>
+        <span [hidden]="!this.fakePlayer.showBet" class="fake-player-bet">{{ (fakePlayer.bet | number:'1.2-2') + "x" }}</span>
+        <span class="ui right floated header" [ngClass]="{pending: fakePlayer.status === 'pending', success: fakePlayer.status === 'winner', danger: fakePlayer.status === 'loser'}">
+            <span *ngIf="fakePlayer.status === 'winner'">+ </span>
+            <span *ngIf="fakePlayer.status === 'loser'">- </span>
+            {{ "$" + (fakePlayer.balance | number:'1.2-2') }} 
+        </span>
+    </p>
+    <div class="ui divider"></div>
+</div>
+
+

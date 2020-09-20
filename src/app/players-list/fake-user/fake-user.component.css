@@ -1,0 +1,36 @@
+p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.fake-player-data {
+    width: 280px;
+}
+
+.fake-player-name {
+    display: inline-block;
+    width: 110px;
+}
+
+.fake-player-bet {
+    margin-left: 10px;
+}
+
+.success {
+    color: rgb(0, 153, 0);
+    font-weight: bold;
+}
+
+.danger {
+    color: rgb(177, 2, 2);
+    font-weight: bold;
+}
+
+.pending {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

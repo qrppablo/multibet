@@ -1,0 +1,34 @@
+td {
+    font-weight: bold;
+}
+
+.success {
+    color: rgb(0, 209, 0);
+}
+
+.danger {
+    color: rgb(255, 37, 37);
+}
+
+.ui.horizontal.divider {
+    margin-bottom: 20px;
+}
+
+.wrapper-history {
+    position: relative;
+    padding: 0 20px;
+    padding-bottom: 15px;
+}
+
+.ui.container.history {
+    position: relative;
+    top: -35px;
+    left: 19px;
+    width: 1149px !important;
+    border-top: 0 !important;
+}
+
+.ui.segment.history {
+    border-top: 0;
+    border-radius: 0.28571429rem;
+}

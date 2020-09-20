@@ -1,0 +1,23 @@
+<div class="chart-wrapper">
+    <p *ngIf="store.startGame" class="counter">{{ counter | number:'1.2-2' }}<span *ngIf="betTime; else multiBlock">s</span><ng-template #multiBlock>x</ng-template>
+    </p> 
+    <canvas baseChart  
+        [datasets]="gameChartData" 
+        [labels]="gameChartLabels" 
+        [options]="gameChartOptions"
+        [colors]="gameChartColors" 
+        [chartType]="gameChartType" 
+        [plugins]="gameChartPlugins">
+    </canvas>
+    <h4 class="ui horizontal divider">
+        Últimos resultados
+    </h4>
+    <div class="results ui segment">
+        <div *ngFor="let result of results">
+            <p>{{ (result | number : '1.2-2') + "x" }}</p>
+        </div>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+

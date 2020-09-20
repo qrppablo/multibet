@@ -1,0 +1,17 @@
+<h3 class="ui left floated header apuesta"><i class="chart line icon"></i>Apuesta</h3>
+<div class="bet ui segment">
+    <form class="ui form" [formGroup]="betForm" (ngSubmit)="onSubmit($event)">
+        <app-input
+            pholder="Ej. 2.5" 
+            [control]="betForm.controls.bet"
+        >
+        </app-input>
+        <br />
+        <button class="large ui red button" [disabled]="betForm.invalid || !store.betButton" type="submit">
+            Apostar
+        </button>
+        <button class="large ui blue button" [disabled]="!store.cashOutButton" (click)="this.cashOut()" type="button">
+            Cobrar
+        </button>
+    </form>
+</div>

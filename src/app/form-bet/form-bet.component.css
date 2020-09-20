@@ -1,0 +1,21 @@
+h3 {
+    font-size: 22px !important;
+}
+
+.red {
+    width: 120px !important;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.blue {
+    width: 120px !important;
+    margin: 0;
+}
+
+.bet.ui.segment {
+    margin-top: 47px;
+    margin-bottom: 40px;
+    max-width: 285px !important;
+    border-radius: 0.28571429rem;
+}

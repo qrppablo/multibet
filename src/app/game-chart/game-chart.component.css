@@ -1,0 +1,47 @@
+.chart-wrapper {
+    position: relative;
+    top: -10px;
+    width: 750px;
+    height: 442px;
+}
+
+.counter {
+    position: absolute;
+    display: block;
+    width: 300px;
+    top: 46.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    color:black;
+}
+
+.ui.horizontal.divider {
+    margin-top: 20px;
+}
+
+.results {
+    margin-top: 10px;
+    display: flex;
+}
+
+.results.ui.segment {
+    margin-top: 23px;
+    height: 50px;
+}
+
+.results div {
+    margin: 0 15px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.success {
+    color: rgb(0, 153, 0);
+}
+
+.danger {
+    color: rgb(177, 2, 2);
+}

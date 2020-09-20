@@ -1,0 +1,29 @@
+<div class="ui container history">
+    <div class="ui segment history">
+        <div class="wrapper-history">
+            <h4 class="ui horizontal divider">
+                Historial de apuestas 
+            </h4>
+            <table class="ui selectable inverted fixed single line celled table">
+                <thead>
+                    <tr>
+                        <th>Fecha/Hora</th>
+                        <th>Valor</th>
+                        <th>Multiplicador</th>
+                        <th>Resultado</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bet of this.store.betHistory">
+                        <td>{{ bet.hour | date:'medium' }}</td>
+                        <td>{{ "$" + bet.value }}</td>
+                        <td>{{ bet.multi + "x" }}</td>
+                        <td [ngClass]="bet.class">{{ bet.result }}</td>
+                        <td>{{ "$" + bet.balance }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
