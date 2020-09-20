@@ -13,9 +13,12 @@ h3 {
     margin: 0;
 }
 
-.bet.ui.segment {
-    margin-top: 47px;
-    margin-bottom: 40px;
-    max-width: 285px !important;
-    border-radius: 0.28571429rem;
+.ui.left.floated.header {
+    position: relative;
+}
+
+.ui.segment {
+    position: absolute;
+    margin-top: 46px;
+    padding-top: 18px;
 }

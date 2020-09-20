@@ -17,12 +17,8 @@ h3 {
 
 .ui.container {
     margin-top: 50px;
-    width: 1110px !important;
+    width: 1110px;
     display: flex;
-}
-
-.aside, .chart {
-    padding: 20px;
 }
 
 .ui.segment.big {
@@ -32,6 +28,10 @@ h3 {
 
 .ui.segment {
     border-radius: 0;
+}
+
+.aside, .game-chart {
+    padding: 20px;
 }
 
 .aside {
@@ -114,4 +114,26 @@ a:active {
     right: 13px;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+.players-list {
+    position: relative;
+    top: 165px;
+}
+
+.bet-history {
+    position: relative;
+    top: -55px;
+    left: 19.2px;
+}
+
+.game-chart {
+    position: relative;
+}
+
+.copyr {
+    position: relative;
+    top: -35px;
+    left: 20px;
+    color: antiquewhite;
 }

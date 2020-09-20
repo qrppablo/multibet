@@ -17,12 +17,18 @@
             <h3 class="ui right floated header"><i class="trophy icon"></i>Mejor paga: ${{ store.bestBet | number : '1.2-2' }}</h3>
             <div class="ui container">
                 <div class="aside">
-                    <app-form-bet></app-form-bet>
-                    <app-players-list></app-players-list>
+                    <app-form-bet class="form-bet"></app-form-bet>
+                    <app-players-list class="players-list"></app-players-list>
                 </div>
-                <app-game-chart class="chart" [newGame]="store.newGame"></app-game-chart>
+                <app-game-chart class="game-chart" [newGame]="store.newGame"></app-game-chart>
+
+                    
+
             </div>
+
         </div>
+        
     </div>
-    <app-bet-history></app-bet-history>
+    <app-bet-history class="bet-history"></app-bet-history>
+    <p class="copyr">&copy; Pablo Torres</p>
 </div>

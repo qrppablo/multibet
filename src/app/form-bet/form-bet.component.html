@@ -1,8 +1,8 @@
-<h3 class="ui left floated header apuesta"><i class="chart line icon"></i>Apuesta</h3>
+<h3 class="ui left floated header"><i class="chart line icon"></i>Apuesta</h3>
 <div class="bet ui segment">
-    <form class="ui form" [formGroup]="betForm" (ngSubmit)="onSubmit($event)">
+    <form class="formulario" [formGroup]="betForm" (ngSubmit)="onSubmit($event)">
         <app-input
-            pholder="Ej. 2.5" 
+            pholder="Ej. 50" 
             [control]="betForm.controls.bet"
         >
         </app-input>

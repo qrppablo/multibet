@@ -1,4 +1,12 @@
 <div class="ui field">
+    <ng-container *ngIf="showErrors()">
+        <div class="input-error" *ngIf="control.errors.required">
+            Debes ingresar un valor
+        </div>
+        <div class="input-error" *ngIf="control.errors.pattern">
+            Ingresa un valor entre 1 y 1000
+        </div>
+    </ng-container>
     <div class="control ui right labeled input">
         <input 
             placeholder="{{ pholder }}"
@@ -8,13 +16,6 @@
             <i class="dollar sign icon"></i>
         </div>
     </div>
-    <ng-container *ngIf="showErrors()">
-        <div *ngIf="control.errors.required">
-            Debes ingresar un valor
-        </div>
-        <div *ngIf="control.errors.pattern">
-            Ingresa un valor entre 1 y 1000
-        </div>
-    </ng-container>
+
 </div>
 

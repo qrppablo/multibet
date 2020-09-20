@@ -14,21 +14,20 @@ td {
     margin-bottom: 20px;
 }
 
-.wrapper-history {
+.wrapper {
     position: relative;
     padding: 0 20px;
     padding-bottom: 15px;
 }
 
-.ui.container.history {
-    position: relative;
-    top: -35px;
-    left: 19px;
-    width: 1149px !important;
+.ui.container {
+    width: 1148px !important;
     border-top: 0 !important;
 }
 
-.ui.segment.history {
+.ui.segment {
     border-top: 0;
-    border-radius: 0.28571429rem;
+    border-radius: 0;
+    border-bottom-left-radius: 0.28571429rem;
+    border-bottom-right-radius: 0.28571429rem;
 }

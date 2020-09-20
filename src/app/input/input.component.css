@@ -4,10 +4,13 @@
 }
 
 .control.ui.right.labeled.input {
-    margin-top: 8px;
     width: 250px !important;
 }
 
 .ui.left.floated.header {
     font-size: 22px;
+}
+
+.input-error {
+    margin-bottom: 2px;
 }

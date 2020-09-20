@@ -2,14 +2,14 @@
     position: relative;
     top: -10px;
     width: 750px;
-    height: 442px;
+    height: 426px;
 }
 
 .counter {
     position: absolute;
     display: block;
     width: 300px;
-    top: 46.5%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 130px;
